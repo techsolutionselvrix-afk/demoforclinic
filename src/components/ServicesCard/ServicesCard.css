@@ -1,0 +1,295 @@
+
+.services-page {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.services-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0px;
+}
+
+.section-heading {
+  max-width: 700px;
+}
+
+.section-heading h2 {
+  color:#173B4D;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+
+.section-heading p {
+  /* color: #718089; */
+  color: #000000a6;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.services-grid {
+     margin-top: 30px;
+
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.service-card {
+  background: #ffffff;
+
+  border: 1px solid #e7eeee;
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+
+  
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+  border-color: #168b96;
+}
+
+
+/* ICON */
+
+.service-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 12px;
+
+  background: #e8f7f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+
+  margin-bottom: 22px;
+}
+
+.service-card h3 {
+  color: #168b96;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #718086;
+  font-size: 14px;
+  line-height: 1.7;
+
+  min-height: 72px;
+}
+
+/* =========================
+   APPOINTMENT CTA
+========================= */
+
+.appointment-cta {
+  max-width: 1200px;
+
+  margin: 0 auto 80px;
+
+  padding: 45px 50px;
+
+  background: #168b96;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.appointment-cta span {
+  color: #d9ffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.appointment-cta h2 {
+  color: white;
+
+  font-size: 30px;
+
+  margin: 10px 0;
+}
+
+.appointment-cta p {
+  color: #e5ffff;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+.appointment-btn {
+  white-space: nowrap;
+
+  background: white;
+
+  color: #168b96;
+
+  border: none;
+
+  padding: 14px 25px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.appointment-btn:hover {
+  transform: translateY(-2px);
+
+  background: #f2ffff;
+}
+.view-more-container .view-services{
+  text-decoration: none;
+  color: #168b96;
+  font-weight: 500;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .services-hero {
+    min-height: 360px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .services-section {
+    padding: 70px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .appointment-cta {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 35px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .services-hero {
+    min-height: 350px;
+    padding: 60px 20px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .services-hero-content p {
+    font-size: 14px;
+  }
+
+
+  .services-section {
+    padding: 60px 18px;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+  }
+
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+
+
+  .appointment-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    margin: 0 18px 50px;
+
+    padding: 30px 25px;
+  }
+
+  .appointment-cta h2 {
+    font-size: 25px;
+  }
+
+  .appointment-btn {
+    width: 100%;
+  }
+
+}
+
+
+

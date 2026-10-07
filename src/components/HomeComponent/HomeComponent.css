@@ -1,0 +1,303 @@
+.clinic-hero {
+  width: 100%;
+  /* min-height: 90vh; */
+  background: #f5fbfc;
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+/* LEFT */
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: #e1f5f5;
+  color: #168b96;
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  color: #173b4d;
+  margin: 0 0 20px;
+}
+
+.hero-content h1 span {
+  color: #168b96;
+}
+
+.hero-content  p {
+  max-width: 560px;
+  color: #65777d;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #168b96;
+  color: white;
+  border: 2px solid #159a9c;
+}
+
+.primary-btn:hover {
+  background: #168b96;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #168b96;
+  border: 2px solid #168b96;
+}
+
+.secondary-btn:hover {
+  background: #168b96;
+  color: white;
+}
+
+/* STATS */
+
+.clinic-info {
+  display: flex;
+  gap: 45px;
+}
+
+.clinic-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.clinic-info strong {
+  font-size: 25px;
+  color: #173b4d;
+}
+
+.clinic-info span {
+  font-size: 13px;
+  color: #718086;
+}
+
+/* RIGHT IMAGE */
+
+.hero-image {
+  flex: 0 0 45%;
+  position: relative;
+}
+
+.image-card {
+  width: 84%;
+  height: 520px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #dceff0;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  object-fit: contain;
+}
+
+/* DOCTOR CARD */
+
+.doctor-card {
+  position: absolute;
+  left: -35px;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.doctor-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #e2f5f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.doctor-card strong {
+  color: #173b4d;
+  font-size: 14px;
+}
+
+.doctor-card p {
+  margin: 3px 0 0;
+  color: #7a898e;
+  font-size: 12px;
+}
+
+.view-more-container{
+  margin: 20px;
+  font-size: 17px;
+}
+.view-more-container .view-doctors{
+  text-decoration: none;
+  color: #168b96;
+  font-weight: 500;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .clinic-hero {
+    padding: 60px 20px;
+  }
+
+  .hero-container {
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 43px;
+  }
+
+  .hero-content > p {
+    font-size: 15px;
+  }
+
+  .hero-image {
+    flex: 0 0 42%;
+  }
+
+  .image-card {
+    height: 430px;
+  }
+
+  .clinic-info {
+    gap: 20px;
+  }
+
+  .doctor-card {
+    left: -20px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .clinic-hero {
+    padding: 50px 18px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .clinic-info {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .clinic-info strong {
+    font-size: 21px;
+  }
+
+  .clinic-info span {
+    font-size: 11px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .image-card {
+    height: 400px;
+  }
+
+  .doctor-card {
+    left: 15px;
+    bottom: 20px;
+  }
+  .image-card{
+  margin: auto;
+  }
+  .image-card img{
+        width: 100%;
+    height: 144%;
+    object-fit: cover;
+  }
+}
+
+

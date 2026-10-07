@@ -1,0 +1,290 @@
+.about-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ================= HERO ================= */
+
+.about-hero {
+  width: 100%;
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eaf7fa;
+  padding: 50px 7%;
+  gap: 40px;
+}
+
+.about-hero-content {
+  /* flex: 1; */
+  padding-top: 70px;
+}
+
+.small-title {
+  color: #168b96;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.about-hero h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  color: #073b5c;
+  margin-bottom: 18px;
+}
+
+.hero-description {
+  max-width: 520px;
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.about-hero-image {
+  flex: 1;
+  max-width: 520px;
+  padding-top:100px;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+/* ================= WHO WE ARE ================= */
+
+.who-section {
+  padding: 70px 7%;
+  background: white;
+}
+
+.who-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.who-text {
+  flex: 1;
+}
+
+.who-text h2 {
+  color: #073b5c;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.who-text p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.who-image {
+  flex: 1;
+}
+
+.who-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* ================= MISSION VISION VALUES ================= */
+
+.mvv-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+
+  padding: 20px 7% 60px;
+}
+
+.mvv-card {
+  padding: 25px 30px;
+  border-right: 1px solid #ddd;
+}
+
+.mvv-card:last-child {
+  border-right: none;
+}
+
+.mvv-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #11949d;
+  font-size: 28px;
+
+  margin-bottom: 12px;
+}
+
+.mvv-card h3 {
+  color: #073b5c;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.mvv-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.experience-section {
+  background: #eaf7fa;
+  padding: 40px 7%;
+}
+
+.experience-section h2 {
+  color: #073b5c;
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.experience-item {
+  text-align: center;
+  border-right: 1px solid #c7dfe3;
+}
+
+.experience-item:last-child {
+  border-right: none;
+}
+
+.experience-item h3 {
+  color: #098b95;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.experience-item p {
+  color: #666;
+  font-size: 13px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    padding: 40px 5%;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .who-section {
+    padding: 55px 5%;
+  }
+
+  .mvv-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .about-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-hero-image img {
+    height: 210px;
+  }
+
+
+  .who-section {
+    padding: 45px 20px;
+  }
+
+  .who-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .who-image {
+    width: 100%;
+  }
+
+  .who-image img {
+    height: 220px;
+  }
+
+
+  .mvv-section {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .mvv-card {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 25px 10px;
+  }
+
+  .mvv-card:last-child {
+    border-bottom: none;
+  }
+
+
+  .experience-section {
+    padding: 35px 20px;
+  }
+
+  .experience-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 0;
+  }
+
+  .experience-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .experience-item:nth-child(3) {
+    border-right: 1px solid #c7dfe3;
+  }
+
+  .experience-item:nth-child(4) {
+    border-right: none;
+  }
+
+}

@@ -1,0 +1,282 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+  position: fixed;
+
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 92%;
+  max-width: 1200px;
+  min-height: 75px;
+
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #123b5d;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e8f7ff;
+  color: #078f99;
+
+  border-radius: 11px;
+
+  font-size: 25px;
+}
+.logo-icon .logo{
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text h2 {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.logo-text span {
+  font-size: 11px;
+  color: #078f99;
+}
+
+
+/* =========================
+   NAV MENU
+========================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+
+  color: #17324d;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #078f99;
+}
+
+
+/* Active page */
+
+.nav-menu a.active {
+  color: #078f99;
+}
+
+
+/* =========================
+   APPOINTMENT BUTTON
+========================= */
+
+.appointment-btn {
+  display: inline-block;
+  background-color: #078f99 !important;
+  color: #ffffff !important;
+  padding: 11px 20px;
+  border: 1px solid #078f99;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+.appointment-btn:active {
+  transform: scale(0.97);
+}
+
+
+/* Mobile appointment
+   desktop par hidden */
+
+.mobile-appointment {
+  display: none;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.menu-btn {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.menu-btn span {
+  width: 25px;
+  height: 2px;
+
+  background-color: #17324d;
+
+  transition: 0.3s;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+  .appointment-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+  .nav-container {
+    min-height: 63px;
+  }
+
+  /* Hide desktop menu */
+
+  .nav-menu {
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 15px 6%;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+
+  /* Menu open */
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+
+  /* Menu items */
+
+  .nav-menu li {
+    width: 100%;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu a {
+    display: block;
+
+    padding: 13px 5px;
+
+    font-size: 14px;
+  }
+
+  .desktop-appointment {
+    display: none;
+  }
+
+
+  /* Show mobile appointment */
+
+  .mobile-appointment {
+    display: block;
+
+    margin-top: 10px;
+  }
+
+  .mobile-appointment .appointment-btn {
+    text-align: center;
+
+    width: 100%;
+  }
+
+
+  /* Show hamburger */
+
+  .menu-btn {
+    display: flex;
+  }
+}
+
+

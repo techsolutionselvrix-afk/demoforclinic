@@ -6,12 +6,21 @@ import Services from "../pages/Services/Services";
 import AppointmentFrom from "../pages/Appointment/AppointmentFrom";
 import Doctors from "../pages/Doctors/Doctors";
 import Contact from "../pages/Contact/Contact";
+import Layout from "../layout/Layout";
 
 const AppRouter = () => {
+
+
   let router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Layout />,
+      children:[
+       {
+        index:true,
+        element:<Home />
+       }
+      ]
     },
     {
       path: "/about",

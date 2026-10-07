@@ -1,0 +1,291 @@
+
+.footer {
+  background: #173b4d;
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 70px 20px 50px;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr 1fr 1.4fr;
+
+  gap: 50px;
+}
+
+
+/* =========================
+   CLINIC ABOUT
+========================= */
+
+.footer-logo {
+  display: inline-block;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+}
+
+.footer-logo span {
+  color: #168B96;
+}
+
+.footer-about p {
+  color: #b8c9ce;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  max-width: 300px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.footer-social {
+  display: flex;
+
+  gap: 10px;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #214c5d;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #159a9c;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER HEADINGS
+========================= */
+
+.footer-column h3 {
+  font-size: 18px;
+
+  margin: 5px 0 22px;
+
+  color: white;
+}
+
+.footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 35px;
+
+  height: 2px;
+
+  background: #159a9c;
+
+  margin-top: 9px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-column ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+
+  color: #b8c9ce;
+
+  font-size: 14px;
+}
+
+.footer-column ul li a {
+  color: #b8c9ce;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #087bd2;
+
+  padding-left: 4px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+}
+
+.contact-item span {
+  width: 30px;
+
+  font-size: 16px;
+}
+
+.contact-item p {
+  color: #b8c9ce;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 20px;
+
+  border-top: 1px solid #315767;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #9fb3b9;
+
+  font-size: 12px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.footer-bottom-links a {
+  color: #9fb3b9;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  font-weight: 600;
+}
+
+.footer-bottom-links a:hover {
+  color: #087bd2;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    padding: 50px 25px 35px;
+
+    gap: 35px;
+  }
+
+  .footer-about p {
+    max-width: 100%;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px 15px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+}
